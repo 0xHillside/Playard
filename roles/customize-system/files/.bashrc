@@ -112,14 +112,14 @@ alias _i='sudo -i'
 # My aliases
 alias prompt-formatter='. ~/.local/bin/prompt-formatter'
 alias scan='nmap -vv -sV -sC -oA nmap/initial'
-alias fweb='ffuf -ic -w /opt/wordlists/directory-list-2.3-small.txt:FUZZ -u'
+alias fweb='ffuf -ic -w /opt/SecList/Discover/Web-Content/big.txt:FUZZ -u'
 alias crack='john --wordlist=/opt/wordlists/rockyou.txt'
 alias cme='netexec'
 alias ars='arsenal'
-alias st='mkdir nmap;mkdir exfiled;mkdir findings;mkdir exploits;touch loot;touch path;echo "ok making....";sleep 1.5;echo "Happy Hacking :D"'
+alias st='mkdir nmap;mkdir exfiled;mkdir findings;mkdir exploits;touch loot;touch path;echo "ok making....";sleep 0.9;echo "Happy Hacking :D"'
 alias cmdshell='cp /opt/cmdshell.php .'
 alias vi="nvim"
-alias vim="vnim"
+alias vim="nvim"
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
