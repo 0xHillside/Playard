@@ -1,4 +1,4 @@
-Hello I'm Acaard :D
+Range Village Ansible Playbook
 
 This is an ansible playbook I made to automate whenever I need to deploy a new machine because I HATE doing stuff, so I made this small playbook to automate some stuff in the machine I deploy (because I break them a lot :P) such as terminal stuff, looks, themes, icons, fonts, tools, etc...
 

@@ -8,7 +8,7 @@ case $- in
       *) return;;
 esac
 
-export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/acaard/go/bin:$PATH
+export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/RangeUser/go/bin:$PATH
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -118,8 +118,6 @@ alias cme='netexec'
 alias ars='arsenal'
 alias st='mkdir nmap;mkdir exfiled;mkdir findings;mkdir exploits;touch loot;touch path;echo "ok making....";sleep 0.9;echo "Happy Hacking :D"'
 alias cmdshell='cp /opt/cmdshell.php .'
-alias vi="nvim"
-alias vim="nvim"
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.

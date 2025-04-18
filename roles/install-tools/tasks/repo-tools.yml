@@ -30,4 +30,7 @@
     - { url: "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.2-alpha/ligolo-ng_proxy_0.7.2-alpha_linux_amd64.tar.gz", filename: "ligolo-ng_proxy_0.7.2-alpha_linux_amd64.tar.gz" }
     - { url: "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.2-alpha/ligolo-ng_proxy_0.7.2-alpha_windows_amd64.zip", filename: "ligolo-ng_proxy_0.7.2-alpha_windows_amd64.zip" }
     - { url: "https://github.com/peass-ng/PEASS-ng/releases/download/20240828-cfb5c8f6/linpeas.sh", filename: "linpeas.sh" }
+    - { url: "https://github.com/jpillora/chisel/releases/download/v1.10.1/chisel_1.10.1_windows_amd64.gz", filename: "chisel_1.10.1_windows_amd64.gz"}
+    - { url: "https://github.com/jpillora/chisel/releases/download/v1.10.1/chisel_1.10.1_linux_amd64.gz", filename: "chisel_1.10.1_linux_amd64.gz"}
+
 

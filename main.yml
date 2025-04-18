@@ -4,6 +4,5 @@
   connection: local 
   roles:
     - role: "roles/customize-system"
-    - role: "roles/tmux-config"
     - role: "roles/install-tools"
     - role: "roles/customize-browser"

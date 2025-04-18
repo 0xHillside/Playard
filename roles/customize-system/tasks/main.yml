@@ -27,18 +27,18 @@
 
 - name: "Adding our new profile"
   set_fact:
-    new_List: "{{ List.value | regex_replace(']$', \", 'Acaard']\") }}"
+    new_List: "{{ List.value | regex_replace(']$', \", 'RangeUser']\") }}"
 
 - name: "Writing the new profile list"
   dconf:
     key: "/org/mate/terminal/global/profile-list"
     value: "{{ new_List }}"
-  when: "'Acaard' not in List.value"
+  when: "'RangeUser' not in List.value"
   
-- name: "Loading Acaard profile from dump"
+- name: "Loading RangeUser profile from dump"
   shell:
-    cmd: "dconf load /org/mate/terminal/profiles/Acaard/ < {{ role_path }}/files/Acaard-dconf"
-  when: "'Acaard' not in List.value"
+    cmd: "dconf load /org/mate/terminal/profiles/RangeUser/ < {{ role_path }}/files/RangeUser-dconf"
+  when: "'RangeUser' not in List.value"
 
 
 - name: "Set icons"
