@@ -2,12 +2,10 @@
 - name: "Install apt packages"
   package:
     name:
+      - golang
       - jq
       - pipx
       - ntpdate
-      - flameshot
-      - exiftool
-      - lightdm-remote-session-freerdp2
     state: latest
   become: true
   become_method: sudo

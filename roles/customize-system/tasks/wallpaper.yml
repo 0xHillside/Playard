@@ -4,12 +4,6 @@
     src: "{{ role_path }}/files/Wallpaper.jpg"
     dest: "{{ ansible_env.HOME }}/Pictures/Wallpaper.jpg"
 - name: "Setting new wallpaper"
-  ansible.builtin.shell: |
-    xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s "{{ ansible_env.HOME }}/Pictures/Wallpaper.jpg" 
-    xfdesktop --reload
-  environment:
-    DISPLAY: ":0"
-    XAUTHORITY: /home/{{ ansible_user }}/.Xauthority
-  become: true
-  become_user: "{{ ansible_user }}"
-
+  ansible.builtin.shell: 
+    xfconf-query -c xfce4-desktop -p $(xfconf-query -c xfce4-desktop -l | grep "workspace0/last-image") -s "{{ ansible_env.HOME }}/Pictures/Wallpaper.jpg"
+    

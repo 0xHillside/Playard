@@ -1,6 +1,6 @@
 ---
-- include_tasks: go-tools.yml
 - include_tasks: apt-packages.yml
+- include_tasks: go-tools.yml
 - include_tasks: pipx-tools.yml
 - include_tasks: gem-packages.yml
 - include_tasks: repo-tools.yml
